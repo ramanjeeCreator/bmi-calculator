@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>
+                Body Mass Index (BMI)
+            </h2>
+            <p>
+                A measure of body fat in adults
+            </p>
+        </div>
+        <div class="middle">
+            <div class="middle-1">
+                <div class="middle-1-1">
+                    <span class="block">Weight</span>
+                    <input type="number" name="Weight" id="weight" value="0" onkeyup="calculate()">
+                    <span>kg</span>
+                </div>
+                <div class="middle-1-2">
+                    <span class="block">height</span>
+                    <input type="number" name="Height" id="height" value="0" onkeyup="calculate()">
+                    <span>cm</span>
+                </div>
+            </div>
+            <div class="middle-2">
+                <h1 id="result">0.0</h1>
+                <span>Underweight BMI</span>
+            </div>
+        </div>
+        <div class="bottom">Source World Health Organization</div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
